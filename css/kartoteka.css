@@ -1,0 +1,674 @@
+
+/*  ---------------------------------          common transition  time  */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+}
+
+
+html, body {
+    padding: 0;
+    margin: 0;
+    /* font-family: "Abril Fatface",sans-serif;*/
+    font-family: 'Life Savers', cursive;
+
+}
+
+a:hover, a:focus{
+    text-decoration: none !important;
+}
+
+/*    -----------------------------             flexbox property    */
+
+.flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-space-between {
+    justify-content: space-between;
+}
+.flex-space-around {
+    justify-content: space-around;
+}
+.flex-center{
+    justify-content: center;
+}
+.flex-start{
+    justify-content: flex-start;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.flex-align-items-center {
+    align-items: center;
+}
+.flex-align-self-center{
+    align-self: center;
+}
+.flex-wrap-wrap{
+    flex-wrap: wrap;
+}
+
+
+/*   ---------------------------         visibility in landscape and hidden in device mode  */
+
+.visible-w-1024{
+    display: block;
+    visibility: visible;
+}
+.visible-device{
+
+    visibility: hidden;
+    display: none;
+}
+
+
+/*   ----------------------------        color background property */
+
+.grey-bg{
+    background: #f2f2f2;
+}
+.red-bg{
+    background:red;
+}
+.black-bg{
+    background-color: #000000;
+}
+.white-bg{
+    background-color: #ffffff;
+}
+.yellow-bg{
+    background-color: orange;
+}
+.transparent{
+    background: transparent !important;
+}
+
+/*  ---------------------------          color text property */
+
+.red-color{
+    color: red;
+}
+
+.black-color,
+.title-black{
+    color: #000000;
+}
+.orange-color{
+    color: orange;
+}
+
+.white-color,
+.title-white{
+    color: #ffffff;
+}
+
+
+/*  ------------------------------            spacer between */
+
+.spacer-20{
+    padding: 10px 10px;
+}
+
+
+/*   ----------------------------                 sections with specific WIDTH and HEIGHT properties  */
+
+
+.full-width-section{
+    width: 100%;
+}
+.section-width-50{
+    width: 50%;
+    height: auto;
+}
+.section-width-60{
+    width: 60%;
+}
+.section-width-40{
+    width: 40%;
+}
+.items-height-30, .items-height-40, .items-height-60, .items-height-70{
+    position: relative;
+}
+.items-height-30:hover .section-title:after, .items-height-40:hover .section-title:after, .items-height-60:hover .section-title:after, .items-height-70:hover .section-title:after{
+    transform: scaleX(1);
+}
+.items-height-60{
+    width: 100%;
+    height: 60%;
+}
+.items-height-60-bg{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 100%),  url("../img/catalog-3.jpg");
+    background-size: cover;
+}
+.items-height-40{
+    width: 100%;
+    height: 40%;
+}
+.items-height-40-bg{
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 100%),  url("../img/catalog-2.jpg");
+    background-size: cover;
+}
+.items-height-70{
+    width: 100%;
+    height: 70%;
+}
+.items-height-70-bg{
+
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 100%),  url("../img/card-3.jpg");
+    background-size: cover;
+}
+.items-height-30{
+    width: 100%;
+    height: 30%;
+
+}
+.items-height-30-bg{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 100%),  url("../img/catalog-11.jpg");
+    background-size: cover;
+}
+
+
+
+/*   ----------------------------------       header section, navigation bar     */
+
+.header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 40%, transparent 100%);
+    z-index: 100;
+}
+.title-black, .title-white{
+    padding: 10px 30px;
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    opacity: 1;
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -o-transition:all .5s ease;
+    transition:all .5s ease;
+}
+.logo{
+    height: 40px;
+    float: right !important;
+    margin-top: 5px;
+    margin-right: 50px;
+}
+
+
+/*  ------------------------------------          first-banner main */
+
+.first-banner{
+    width: 100%;
+    height:100vh;
+}
+.first-banner h1{
+    font-size: 5em;
+    margin:0;
+    /*padding: 0 0 0 100px;*/
+    letter-spacing: 2px;
+    text-align: center;
+}
+.first-banner p{
+    padding: 20px 0 0 0;
+    font-size: 2em;
+    margin: 0;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.first-banner-bg{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 0.8) 100%),  url("../img/catalog-5.jpg");
+    background-size: cover;
+}
+
+
+/*   ---------------------------------           first section main */
+
+.first-section-items{
+    height: 1200px;
+}
+.section-title{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    padding-bottom: 1px;
+    color: #ffffff;
+    font-size: 4em;
+}
+.section-title:after{
+    display: block;
+    content: '';
+    border-bottom: 2px solid orange;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+
+/*  --------------------------------------                   mask property    */
+
+.display-block{
+    display: block;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.cover-size-bg{
+    background-size: cover !important;
+    background-position: 50% !important;
+}
+.mask{
+    height: 100%;
+    -webkit-transition:all 5s ease;
+    -moz-transition:all 5s ease;
+    -o-transition:all 5s ease;
+    transition:all 5s ease;
+}
+.mask:hover
+{   transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    -moz-transform:  scale(1.1,1.1);
+    -o-transform:  scale(1.1,1.1);
+}
+
+
+/*  ----------------------------------             second section main  */
+
+.second-section{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%),  url("../img/catalog-8.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+/* -------------------------------------           third section main */
+
+.third-section{
+    height: 400px;
+}
+.third-section-item{
+    height: 100%;
+}
+.third-section-bg{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 100%),  url("../img/card-6.jpg");
+    background-size: cover;
+}
+
+
+/*  ------------------------------------             map section and markers   */
+
+
+.map-section{
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+#gmaps {
+    width: 100%;
+    height: 110vh;
+    -webkit-transition: .1s !important;
+    -moz-transition: .1s !important;
+    -o-transition: .1s !important;
+    transition: .1s !important;
+
+}
+.list-markers{
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    background: rgba(0,0,0,.6);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.list-markers li{
+    padding: 10px;
+    font-size: 18px; color: #ffffff;
+}
+.list-markers span{
+    padding: 3px 11px;
+    background: #FF5F50;
+    border-radius: 50%;
+    color: #000000;
+    margin-right: 5px;
+}
+
+/* ----------------------------------           footer section */
+
+
+.footer{
+    padding: 20px 0;
+}
+.footer-bg{
+    background: linear-gradient(to bottom, rgba(250, 250, 250,.4) 0%, rgba(250, 250, 250, 0.8) 100%),  url("../img/card-2.jpg");
+    background-position: 0% 80% !important;
+}
+.footer img{
+    height: 30px;
+    margin:10px;
+}
+.footer-text{
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+/* ---------------------------------------            schedule section and schedule view  */
+
+.schedule-section{
+    height: 100vh;
+    width: 100%;
+}
+
+/* ------------------------------------               schedule-section landscape and device property (responsibility) */
+
+.schedule-section-width-20{
+    width: 50%;
+}
+.schedule-section-width-80 {
+    width: 50%;
+}
+
+/* ---------------------------------                schedule backgrounds   */
+
+.schedule-bg-1{
+    background:linear-gradient(to bottom, rgba(250, 250, 250,.5) 0%, rgba(250, 250, 250, 0.7) 100%),  url("../img/card-2.jpg");
+    background-size: cover;
+}
+.schedule-bg-2{
+    background:linear-gradient(to bottom, rgba(250, 250, 250,.5) 0%, rgba(250, 250, 250, 0.7) 100%),  url("../img/card-3.jpg");
+    background-size: cover;
+}
+.schedule-bg-3{
+    background:linear-gradient(to bottom,rgba(250, 250, 250,.5) 0%, rgba(250, 250, 250, 0.7) 100%),  url("../img/card-5.jpg");
+    background-size: cover;
+}
+.schedule-bg-4{
+    background:linear-gradient(to bottom, rgba(250, 250, 250,.5) 0%, rgba(250, 250, 250, 0.7) 100%),  url("../img/card-6.jpg");
+    background-size: cover;
+}
+.schedule-top-section-bg{
+    background-size: cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.8) 100%),  url("../img/catalog-10.jpg");
+}
+.card-template-bg{
+    background:linear-gradient(to bottom, rgba(250, 250, 250,.6) 0%, rgba(250, 250, 250, 0.7) 100%),  url("../img/template-index-card.jpg") no-repeat 50%;
+}
+
+/*  ------------------------------------------         date in schedule  */
+
+.date-number{
+    font-size: 5em;
+    text-align: center;
+    width: 1.5em;
+    word-break: break-all;
+    padding: 5px;
+}
+
+/*  ---------------------------------------          border colors in schedule section    */
+
+.border-dotted{
+    border-right: 7px dotted;
+}
+.border-color-yellow{
+    border-right-color: #ffff00;
+}
+.border-color-white{
+    border-right-color: #ffffff;
+}
+.border-color-black{
+    border-right-color: #000000;
+}
+.border-color-orange{
+    border-right-color: orange;
+}
+.border-bottom-color-orange{
+    border-bottom-color: orange !important;
+}
+.border-bottom-color-orange:hover{
+    border-bottom-color: red !important;
+}
+
+/*  ----------------------------------------           time in schedule    */
+
+.time{
+    border-radius: 50%;
+    padding: 35px 4px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+.time-schedule{
+    border-radius: 50%;
+    padding: 20px 12px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*  ---------------------------------------        person, show and place in schedule  */
+
+.schedule-person-name{
+    border-bottom: 2px solid;
+    font-size: 2em;
+    text-decoration: none;
+}
+.schedule-person-name:hover,.schedule-show-title:hover{
+    text-decoration: none;
+    opacity: .6;
+    color: #000000;
+}
+.schedule-show-title{
+    font-size: 20px;
+}
+.schedule-place{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+
+/* ----------------------------------------          slick carousel  */
+
+.carousel-bg{
+    background: url("../img/template-index-card.jpg");
+    background-size: cover;
+}
+.slick-initialized .slick-slide{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex !important;
+}
+.slick-slider, .slick-slider .slick-track, .slick-slider .slick-list{
+    height: 100% !important;
+}
+.slick-slider{
+    margin-bottom: 0 !important;
+}
+.slick-prev, .slick-next{
+    display: none;
+}
+.slick-dots{
+    bottom: 0 !important;
+}
+.slick-dots li button:before {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 3px !important;
+    height: 3px !important;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+    background: rgba(0,0,0,0.8) !important;
+    border-radius: 50%;
+    content: "" !important;
+}
+
+/*  ----------------------------------------            artist and show options   */
+
+.shows-top-section-bg{
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.8) 100%),  url("../img/catalog-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.artists-top-section-bg{
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0.8) 100%),  url("../img/catalog-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.artist-section-height{
+    height: 400px;
+    position: relative;
+}
+.artist-name{
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    padding-bottom: 5px;
+    color: #ffffff;
+    font-size: 3em;
+}
+.artist-name:after{
+    display: block;
+    content: '';
+    border-bottom: 2px solid orange;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    transform-origin: 0% 50%;
+}
+
+.artist-section-height:hover .artist-name:after{
+    transform: scaleX(1);
+}
+
+/*   -----------------------------------------           artists-detail view   */
+
+.artists-detail-img{
+    min-height: 100vh;
+    background-position: 50% !important;
+    position: relative;
+}
+.artists-detail-img:after{
+    content:url("../img/paper-clip.png") ;
+    width: auto;
+    max-height: 200px;
+    position: absolute;
+    top:-4%;
+    right: 2%;
+}
+.artists-detail-tmpl-img{
+    background:url('../img/catalog-11.jpg');
+    background-size: cover;
+    height: 400px;
+}
+.artists-detail-name, .artists-detail-text{
+    padding: 0px 30px;
+}
+.artists-detail-text{
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*   -----------------------------------------           tickets section   */
+
+.my-container{
+    max-width: 600px;
+    margin: auto;
+    padding: 40px 0;
+
+}
+.tickets-info, .tickets-info-list, .tickets-booking{
+    font-size: 18px;
+}
+.tickets-info{
+    padding: 15px 20px;
+}
+.tickets-info-list{
+    padding:25px 40px;
+}
+.tickets-info-list li a{
+    color: #000000;
+    text-decoration: none;
+
+
+}
+.tickets-info-list li a:hover{
+    color: red;
+}
+.tickets-booking{
+    border-bottom: 1px solid orange;
+    color: #000000;
+}
+.tickets-booking:hover{
+    border-bottom-color: red;
+    color: #000000;
+}
+
+/* -------------------------------------------             sroll down button   */
+
+.fa-angle-down:before {
+    content: "\f107";
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px 14px;
+    color: #ffffff;
+    font-size: 3em;
+}
+.btn-scroll{
+    margin: 60px 0 0 0;
+    display: block;
+    width: 70px;
+}
+.btn-scroll:hover{
+    opacity: .5;
+}
+
+/* -------------------------------------------            parallax options  */
+
+.parallax {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 40%;
+    background-size: cover;
+}
+
+/*  ---------------------------- -----------             my title  animation  */
+
+.animation{
+    animation:myFadeInUp 2s;
+    -webkit-animation:myFadeInUp 2s;
+}
+

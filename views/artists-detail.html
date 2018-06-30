@@ -1,0 +1,73 @@
+<div class="wrapper  wow fadeIn" data-wow-duration=".5s"
+     data-wow-delay=".5s">
+  <div class="header">
+    <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+    <label for="drawer-toggle" id="drawer-toggle-label"></label>
+    <nav id="drawer">
+      <ul>
+        <li><a href="main">Home</a></li>
+        <li><a href="schedule">Harmonogram</a></li>
+        <li><a href="artists">Artyści</a></li>
+        <li><a href="shows">Spektakle</a></li>
+        <li><a href="map">Mapa wydarzeń</a></li>
+        <li><a href="tickets">Rezerwacje</a></li>
+        <li><a href="contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a href="main.html"><img class="logo" src="img/logo.png"></a>
+  </div>
+<div class="flex flex-space-between flex-wrap-wrap">
+  <div class="section-width-50 artists-detail-img"
+       style="background: url({{artist.artistImg}}); background-size: cover;"></div>
+  <div class="section-width-50 flex flex-column flex-center">
+    <h1 class="artists-detail-name animation">{{artist.name}}</h1>
+    <a facebook-feed-share class="animation social-btn-width" data-url='{{artist.url}}' data-name='{{artist.name}}' data-picture='{{artist.url_artistImg}}' data-description='{{artist.bio_text}}' ><span class="social-btn">f</span></a>
+    <p class="artists-detail-text animation" ng-repeat="bio_text in artist.bio_text">{{bio_text}}</p>
+  </div>
+</div>
+<div class="flex flex-space-between">
+  <div class="section-width-50 flex flex-center flex-align-items-center card-template-bg">
+    <span class="orange-color time black-bg  wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay=".5s">{{artist.time}}/{{artist.date}}</span>
+
+    <div class="flex flex-column flex-center flex-align-items-center artists-detail-tmpl-name">
+      <a href="/shows/{{artist.id}}" class="black-color border-bottom-color-orange schedule-person-name  wow fadeInDown" data-wow-duration="1s"
+         data-wow-delay=".5s">{{artist.show_title}}</a>
+      <span class="red-color schedule-place wow fadeInDown" data-wow-duration="1s"
+            data-wow-delay=".5s">{{artist.location}}</span>
+    </div>
+  </div>
+  <div class="section-width-50 artists-detail-tmpl-img visible-w-1024"></div>
+</div>
+  </div>
+<!-- footer -->
+<div class="full-width-section parallax footer footer-bg flex flex-wrap-wrap flex-space-around"
+     sticky-footer=".wrapper">
+  <img src="img/esk-1.png">
+  <img src="img/esk-2.png">
+  <span class="footer-text">sfinansowane ze środków</span>
+  <img src="img/ministerstwo.png">
+  <span class="footer-text">współorganizatorzy</span>
+  <img src="img/nfm.png">
+  <img src="img/impart.png">
+  <img src="img/grot.png">
+  <span class="footer-text">partner strategiczny</span>
+  <img src="img/kghm.png">
+  <span class="footer-text">partnerzy</span>
+  <img src="img/skytower.png">
+  <img src="img/tm.png">
+  <img src="img/zajezdnia.png">
+  <img src="img/osrodek-p-i-p.png">
+  <img src="img/jednego-aktora.png">
+  <span class="footer-text">patroni medialni</span>
+  <img src="img/radio-wroclaw.png">
+  <img src="img/gazeta-wyborcza.png">
+  <img src="img/wroclaw-pl.png">
+  <img src="img/teatralny.png">
+  <img src="img/co-jest-grane.png">
+  <img src="img/kultura-dost.png">
+  <img src="img/dla-studenta.png">
+  <img src="img/infro-art-24.png">
+</div>
+
+

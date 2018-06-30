@@ -1,0 +1,112 @@
+[
+  {
+    "id":"Leszek Mądzik",
+    "name":"Leszek Mądzik",
+    "artistImg":"'img/leszek-madzik.jpg'",
+    "widthClass":"width:50%;",
+    "show_title":"Odchodzi",
+    "showImg":"'img/odchodzi.jpg'",
+    "date":"07 pt",
+    "time":"19:00",
+    "location":"park Południowy"
+  },
+  {
+    "id":"Bogusław Kierc",
+    "name":"Bogusław Kierc",
+    "artistImg":"'img/boguslaw-kierc.jpg'",
+    "widthClass":"width:50%;",
+    "show_title":"Odejście głodomora",
+    "showImg":"'img/card-3.jpg'",
+    "date":"08 sb",
+    "time":"17:00",
+    "location":"Sky Tower, ul. Powstańców Śląskich 95"
+  },
+  {
+    "id":"Marcin Kalisz",
+    "name":"Marcin Kalisz",
+    "artistImg":"'img/marcin-kalisz.jpg'",
+    "widthClass":"width:100%;",
+    "show_title":"Kartoteka",
+    "showImg":"'img/catalog-10.jpg'",
+    "date":"08 sb",
+    "time":"20:00",
+    "location":"Scena na Świebodzkim"
+  },
+  {
+    "id":"Państwowa Wyższa Szkoła Teatralna (Kraków)",
+    "name":"Państwowa Wyższa Szkoła Teatralna (Kraków)",
+    "artistImg":"'img/catalog-2.jpg'",
+    "widthClass":"width:60%;",
+    "show_title":"Kartoteka Rozrzucona 2.016",
+    "showImg":"'img/catalog-6.jpg'",
+    "date":"09 nd",
+    "time":"17:00",
+    "location":"Teatr Polski-Scena Kameralna: podwórze"
+  },
+  {
+    "id":"Ewa Wycichowska",
+    "name":"Ewa Wycichowska",
+    "artistImg":"'img/ewa-wycichowska.jpg'",
+    "widthClass":"width:40%;",
+    "show_title":"Lament. Pamięci Tadeusza Różewicza",
+    "showImg":"'img/lament.jpg'",
+    "date":"09 nd",
+    "time":"19:00",
+    "location":"Centrum Historii Zajezdnia"
+  },
+  {
+    "id":"Marcin Liber",
+    "name":"Marcin Liber",
+    "artistImg":"'img/marcin-liber.jpg'",
+    "widthClass":"width:100%;",
+    "show_title":"III Furie",
+    "showImg":"'img/trzy-furie.jpg'",
+    "date":"09 nd",
+    "time":"20:30",
+    "location":"Wrocław Świebodzki: poczekalnie"
+  },
+  {
+    "id":"Krzysztof Gordon",
+    "name":"Krzysztof Gordon",
+    "artistImg":"'img/krzysztof-gordon.jpg'",
+    "widthClass":"width:50%;",
+    "show_title":"Śmieszny staruszek",
+    "showImg":"'img/smieszny-staruszek.jpg'",
+    "date":"10 pn",
+    "time":"17:00",
+    "location":"Uniwersytet Wroclawski, Aula im. Witolda Świdy Wydział Prawa, Administracji i Ekonomii bud. 'D'"
+  },
+  {
+    "id":"Janusz Opryński",
+    "name":"Janusz Opryński",
+    "artistImg":"'img/janusz-oprynski.jpg'",
+    "widthClass":"width:50%;",
+    "show_title":"Kartoteka - fragment",
+    "showImg":"'img/catalog-8.jpg'",
+    "date":"10 pn",
+    "time":"18:00",
+    "location":"Parking podziemny pod NFM"
+  },
+  {
+    "id":"Paweł Świątek",
+    "name":"Paweł Świątek",
+    "artistImg":"'img/pawel-swiatek.jpg'",
+    "widthClass":"width:100%;",
+    "show_title":"Paw królowej",
+    "showImg":"'img/paw-krolowej.jpg'",
+    "date":"10 pn",
+    "time":"19:00",
+    "location":"Stara Piekarnia, ul. Księcia Witolda 62–70"
+  },
+  {
+    "id":"Wiesław Komasa",
+    "name":"Wiesław Komasa",
+    "artistImg":"'img/wieslaw-komasa.jpg'",
+    "widthClass":"width:100%;",
+    "show_title":"Kartoteka - fragment",
+    "showImg":"'img/kartoteka-fragment.jpg'",
+    "date":"10 pn",
+    "time":"20:30",
+    "location":"Przejście podziemne na pl. Jana Pawła II"
+  }
+]

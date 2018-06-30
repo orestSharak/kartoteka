@@ -1,0 +1,64 @@
+<div class="wrapper  wow fadeIn" data-wow-duration=".5s"
+     data-wow-delay=".5s">
+  <div class="header">
+    <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+    <label for="drawer-toggle" id="drawer-toggle-label"></label>
+    <nav id="drawer">
+      <ul>
+        <li><a href="main">Home</a></li>
+        <li><a href="schedule">Harmonogram</a></li>
+        <li><a href="artists">Artyści</a></li>
+        <li><a href="shows">Spektakle</a></li>
+        <li><a href="map">Mapa wydarzeń</a></li>
+        <li><a href="tickets">Rezerwacje</a></li>
+        <li><a href="contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a href="main.html"><img class="logo" src="img/logo.png"></a>
+  </div>
+  <div class="first-banner shows-top-section-bg flex flex-center flex-align-items-center flex-column">
+    <h1 class="white-color animation">Spektakle</h1>
+    <a du-smooth-scroll du-scrollspy href="#scroll-down" class="fa fa-angle-down btn-scroll animation" aria-hidden="true"></a>
+  </div>
+  <section class="flex flex-row flex-wrap-wrap" id="scroll-down">
+    <div ng-repeat="artist in artists"
+         class="display-block overflow-hidden artist-section-height"
+         style="{{artist.widthClass}}">
+      <a href="/shows/{{artist.id}}"
+         style="background:linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.4) 100%), url({{artist.showImg}})"
+         class="display-block mask cover-size-bg">
+      </a>
+      <a href="/shows/{{artist.id}}"><span class="artist-name  wow fadeInLeft" data-wow-duration="1s"
+                                           data-wow-delay=".5s">{{artist.show_title}}</span></a>
+    </div>
+  </section>
+</div>
+<!-- footer -->
+<div class="full-width-section parallax footer footer-bg flex flex-wrap-wrap flex-space-around"
+     sticky-footer=".wrapper">
+  <img src="img/esk-1.png">
+  <img src="img/esk-2.png">
+  <span class="footer-text">sfinansowane ze środków</span>
+  <img src="img/ministerstwo.png">
+  <span class="footer-text">współorganizatorzy</span>
+  <img src="img/nfm.png">
+  <img src="img/impart.png">
+  <img src="img/grot.png">
+  <span class="footer-text">partner strategiczny</span>
+  <img src="img/kghm.png">
+  <span class="footer-text">partnerzy</span>
+  <img src="img/skytower.png">
+  <img src="img/tm.png">
+  <img src="img/zajezdnia.png">
+  <img src="img/osrodek-p-i-p.png">
+  <img src="img/jednego-aktora.png">
+  <span class="footer-text">patroni medialni</span>
+  <img src="img/radio-wroclaw.png">
+  <img src="img/gazeta-wyborcza.png">
+  <img src="img/wroclaw-pl.png">
+  <img src="img/teatralny.png">
+  <img src="img/co-jest-grane.png">
+  <img src="img/kultura-dost.png">
+  <img src="img/dla-studenta.png">
+  <img src="img/infro-art-24.png">
+</div>

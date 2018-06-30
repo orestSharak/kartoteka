@@ -1,0 +1,129 @@
+<div class="wrapper  wow fadeIn" data-wow-duration=".5s"
+     data-wow-delay=".5s">
+  <div class="header">
+    <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+    <label for="drawer-toggle" id="drawer-toggle-label"></label>
+    <nav id="drawer">
+      <ul>
+        <li><a href="main">Home</a></li>
+        <li><a href="schedule">Harmonogram</a></li>
+        <li><a href="artists">Artyści</a></li>
+        <li><a href="shows">Spektakle</a></li>
+        <li><a href="map">Mapa wydarzeń</a></li>
+        <li><a href="tickets">Rezerwacje</a></li>
+        <li><a href="contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a href="main.html"><img class="logo" src="img/logo.png"></a>
+  </div>
+<div class="first-banner schedule-top-section-bg flex flex-center flex-align-items-center flex-column">
+  <h1 class="white-color animation">Harmonogram wydarzeń</h1>
+  <p class="orange-color animation">7-10 października</p>
+  <a du-smooth-scroll du-scrollspy href="#scroll-down" class="fa fa-angle-down btn-scroll animation" aria-hidden="true"></a>
+</div>
+<section class="schedule-section schedule-bg-1 flex flex-space-between" id="scroll-down">
+  <div class="schedule-section-width-20 border-dotted border-color-black flex flex-center flex-align-items-center"><span
+      class="date-number red-color  wow fadeInUp" data-wow-duration="1s"
+      data-wow-delay=".5s">07 pt</span>
+  </div>
+  <div class="schedule-section-width-80 flex flex-column flex-align-self-center" >
+    <div class="flex flex-align-items-center flex-start spacer-20" ng-repeat="artist in artists | filter:{date:'07 pt'}">
+      <span class="orange-color time-schedule black-bg  wow fadeInDown" data-wow-duration=".5s"
+            data-wow-delay=".5s">{{artist.time}}</span>
+
+      <div class="flex flex-column flex-align-items-center  wow fadeInDown" data-wow-duration=".5s"
+           data-wow-delay=".5s">
+        <a href="/artists/{{artist.id}}" class="black-color schedule-person-name">{{artist.name}}</a>
+        <a href="/shows/{{artist.id}}" class="black-color schedule-show-title">{{artist.show_title}}</a>
+        <span class="black-color schedule-place">{{artist.location}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="schedule-section schedule-bg-2 flex flex-space-between" >
+  <div class="schedule-section-width-20  border-dotted border-color-black flex flex-center flex-align-items-center"><span
+      class="date-number red-color  wow fadeInUp" data-wow-duration=".5s"
+      data-wow-delay=".5s">08 sb</span>
+  </div>
+  <div class="schedule-section-width-80  flex flex-column flex-align-self-center ">
+    <div class="flex flex-align-items-center flex-start spacer-20" ng-repeat="artist in artists | filter:{date:'08 sb'}">
+      <span class="orange-color time-schedule black-bg  wow fadeInDown" data-wow-duration=".5s"
+            data-wow-delay=".5s">{{artist.time}}</span>
+
+      <div class="flex flex-column flex-align-items-center  wow fadeInDown" data-wow-duration=".5s"
+           data-wow-delay=".5s">
+        <a href="/artists/{{artist.id}}" class="black-color schedule-person-name">{{artist.name}}</a>
+        <a href="/shows/{{artist.id}}" class="black-color schedule-show-title">{{artist.show_title}}</a>
+        <span class="black-color schedule-place">{{artist.location}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="schedule-section schedule-bg-3 flex flex-space-between" >
+  <div class="schedule-section-width-20  border-dotted border-color-black flex flex-center flex-align-items-center"><span
+      class="date-number red-color  wow fadeInUp" data-wow-duration=".5s"
+      data-wow-delay=".5s">09 nd</span>
+  </div>
+  <div class="schedule-section-width-80  flex flex-column flex-align-self-center ">
+    <div class="flex flex-align-items-center flex-start spacer-20" ng-repeat="artist in artists | filter:{date:'09 nd'}">
+      <span class="orange-color time-schedule black-bg  wow fadeInDown" data-wow-duration=".5s"
+            data-wow-delay=".5s">{{artist.time}}</span>
+
+      <div class="flex flex-column flex-align-items-center  wow fadeInDown" data-wow-duration=".5s"
+           data-wow-delay=".5s">
+        <a href="/artists/{{artist.id}}" class="black-color schedule-person-name">{{artist.name}}</a>
+        <a href="/shows/{{artist.id}}" class="black-color schedule-show-title">{{artist.show_title}}</a>
+        <span class="black-color schedule-place">{{artist.location}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="schedule-section schedule-bg-4 flex flex-space-between" >
+  <div class="schedule-section-width-20  border-dotted border-color-black flex flex-center flex-align-items-center"><span
+      class="date-number red-color  wow fadeInUp" data-wow-duration=".5s"
+      data-wow-delay=".5s">10 pn</span>
+  </div>
+  <div class="schedule-section-width-80  flex flex-column flex-align-self-center ">
+    <div class="flex flex-align-items-center flex-start spacer-20" ng-repeat="artist in artists | filter:{date:'10 pn'}">
+      <span class="orange-color time-schedule black-bg  wow fadeInDown" data-wow-duration=".5s"
+            data-wow-delay=".5s">{{artist.time}}</span>
+
+      <div class="flex flex-column flex-align-items-center  wow fadeInDown" data-wow-duration=".5s"
+           data-wow-delay=".5s">
+        <a href="/artists/{{artist.id}}" class="black-color schedule-person-name">{{artist.name}}</a>
+        <a href="/shows/{{artist.id}}" class="black-color schedule-show-title">{{artist.show_title}}</a>
+        <span class="black-color schedule-place">{{artist.location}}</span>
+      </div>
+    </div>
+  </div>
+</section>
+  </div>
+<!-- footer -->
+<div class="full-width-section parallax footer footer-bg flex flex-wrap-wrap flex-space-around"
+     sticky-footer=".wrapper">
+  <img src="img/esk-1.png">
+  <img src="img/esk-2.png">
+  <span class="footer-text">sfinansowane ze środków</span>
+  <img src="img/ministerstwo.png">
+  <span class="footer-text">współorganizatorzy</span>
+  <img src="img/nfm.png">
+  <img src="img/impart.png">
+  <img src="img/grot.png">
+  <span class="footer-text">partner strategiczny</span>
+  <img src="img/kghm.png">
+  <span class="footer-text">partnerzy</span>
+  <img src="img/skytower.png">
+  <img src="img/tm.png">
+  <img src="img/zajezdnia.png">
+  <img src="img/osrodek-p-i-p.png">
+  <img src="img/jednego-aktora.png">
+  <span class="footer-text">patroni medialni</span>
+  <img src="img/radio-wroclaw.png">
+  <img src="img/gazeta-wyborcza.png">
+  <img src="img/wroclaw-pl.png">
+  <img src="img/teatralny.png">
+  <img src="img/co-jest-grane.png">
+  <img src="img/kultura-dost.png">
+  <img src="img/dla-studenta.png">
+  <img src="img/infro-art-24.png">
+</div>

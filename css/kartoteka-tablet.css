@@ -1,0 +1,88 @@
+
+/*    ---------------------------------             visible in device mode and hidden in landscape    */
+
+.visible-w-1024{
+    visibility: hidden;
+    display: none;
+}
+.visible-device{
+    display: block;
+    visibility: visible;
+}
+
+/*  ------------------------------                      header    */
+
+.logo{
+    height: 35px;
+    margin-right: 20px;
+}
+
+
+/*    ---------------------------------               section with specific WIDTH and HEIGHT   */
+
+.section-width-50{
+    width: 100%;
+}
+.first-section-items{
+    height: auto;
+}
+.items-height-30, .items-height-40,.items-height-70{
+    height: 500px;
+}
+.items-height-60{
+    height: 650px;
+}
+
+    /*--------------------------------------               map section and markers   */
+
+#gmaps, .map-section{
+    height: 400px;
+}
+
+.list-markers{
+    position: relative;
+    top:0;
+    right: 0;
+    background: rgb(8,48,74);
+    padding: 0;
+    margin: 0;
+}
+
+/*  -----------------------------------             schedule  section and responsibility    */
+
+.schedule-section{
+    height: 60vh;
+}
+.schedule-section-width-20{
+    width: 50%;
+}
+.schedule-section-width-80{
+    width: 50%;
+}
+
+/*   ----------------------------------                  artist   section  */
+
+.artist-name{
+    font-size: 2em;
+}
+.artists-detail-tmpl-name{
+    height: 300px;
+}
+.artists-detail-img{
+    margin-bottom: 20px;
+}
+
+
+/*     --------------------------------                parallax options   */
+
+.parallax{
+    background-attachment: scroll !important;
+}
+
+/* ------------------------------------             my title animation */
+
+.animation{
+    animation:none;
+    -webkit-animation:none;
+}
+

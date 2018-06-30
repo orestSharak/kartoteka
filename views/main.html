@@ -1,0 +1,209 @@
+<div class="wrapper  wow fadeIn" data-wow-duration=".5s"
+     data-wow-delay=".5s">
+  <div class="header">
+    <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+    <label for="drawer-toggle" id="drawer-toggle-label"></label>
+    <nav id="drawer">
+      <ul>
+        <li><a href="main">Home</a></li>
+        <li><a href="schedule">Harmonogram</a></li>
+        <li><a href="artists">Artyści</a></li>
+        <li><a href="shows">Spektakle</a></li>
+        <li><a href="map">Mapa wydarzeń</a></li>
+        <li><a href="tickets">Rezerwacje</a></li>
+        <li><a href="contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a href="main"><img class="logo" src="img/logo.png"></a>
+  </div>
+
+  <div class="first-banner first-banner-bg flex flex-center flex-align-items-center flex-column">
+    <h1 class="white-color animation">Kartoteka</h1>
+
+    <h1 class="white-color animation">rozrzucona</h1>
+
+    <p class="white-color animation">Próba podjęcia wyzwania wobec poetyki fragmentu</p>
+
+    <p class="orange-color  animation">7-10 października</p>
+    <a du-smooth-scroll du-scrollspy href="#scroll-down" class="fa fa-angle-down btn-scroll animation"
+       aria-hidden="true"></a>
+  </div>
+  <section id="scroll-down">
+    <div class=" flex flex-align-items-center full-width-section second-section parallax">
+      <h1 class="title-white my-container wow fadeInUp" data-wow-duration="1s"
+          data-wow-delay="1.5">Wpisane w przestrzeń ulic i placów Wrocławia prezentacje specjalnie przygotowanych akcji
+        i
+        interwencji artystycznych, inspirowanych twórczością Tadeusza Różewicza.</h1>
+    </div>
+  </section>
+  <section ng-controller="ArtistsCtrl">
+    <div class="flex flex-space-between flex-wrap-wrap">
+      <div class="section-width-50 first-section-items flex-wrap-wrap">
+        <a href="schedule" class="items-height-40 display-block overflow-hidden"><span
+            class="display-block mask items-height-40-bg"></span><span class="section-title wow fadeInLeft"
+                                                                       data-wow-duration="1s"
+                                                                       data-wow-delay="0.5">Harmonogram</span></a>
+
+        <div class="items-height-60 display-block overflow-hidden carousel-bg">
+
+          <slick infinite="true" speed="2000" slides-to-show="1" slides-to-scroll="1" dots="true">
+            <!-- schedule container -->
+            <section class="schedule-section transparent flex flex-space-between">
+              <div
+                  class="schedule-section-width-20 border-dotted border-color-black flex flex-center flex-align-items-center"><span
+                  class="date-number red-color">07 pt</span>
+              </div>
+              <div class="schedule-section-width-80 flex flex-column flex-align-self-center">
+                <div class="flex flex-align-items-center flex-start spacer-20"
+                     ng-repeat="artist in artists | filter:{date:'07 pt'}">
+                  <span class="orange-color time-schedule black-bg">{{artist.time}}</span>
+
+                  <div class="flex flex-column flex-align-items-center">
+                    <a href="/artists/{{artist.id}}" class="black-color schedule-person-name">{{artist.name}}</a>
+                    <a href="/shows/{{artist.id}}" class="black-color schedule-show-title">{{artist.show_title}}</a>
+                    <span class="black-color schedule-place">{{artist.location}}</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="schedule-section transparent flex flex-space-between">
+              <div
+                  class="schedule-section-width-20  border-dotted border-color-black flex flex-center flex-align-items-center"><span
+                  class="date-number red-color">08 sb</span>
+              </div>
+              <div class="schedule-section-width-80  flex flex-column flex-align-self-center ">
+                <div class="flex flex-align-items-center flex-start spacer-20"
+                     ng-repeat="artist in artists | filter:{date:'08 sb'}">
+                  <span class="orange-color time-schedule black-bg">{{artist.time}}</span>
+
+                  <div class="flex flex-column flex-align-items-center">
+                    <a href="/artists/{{artist.id}}" class="black-color schedule-person-name">{{artist.name}}</a>
+                    <a href="/shows/{{artist.id}}" class="black-color schedule-show-title">{{artist.show_title}}</a>
+                    <span class="black-color schedule-place">{{artist.location}}</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="schedule-section transparent flex flex-space-between">
+              <div
+                  class="schedule-section-width-20  border-dotted border-color-black flex flex-center flex-align-items-center"><span
+                  class="date-number red-color">09 nd</span>
+              </div>
+              <div class="schedule-section-width-80  flex flex-column flex-align-self-center ">
+                <div class="flex flex-align-items-center flex-start spacer-20"
+                     ng-repeat="artist in artists | filter:{date:'09 nd'}">
+                  <span class="orange-color time-schedule black-bg">{{artist.time}}</span>
+
+                  <div class="flex flex-column flex-align-items-center">
+                    <a href="/artists/{{artist.id}}" class="black-color schedule-person-name">{{artist.name}}</a>
+                    <a href="/shows/{{artist.id}}" class="black-color schedule-show-title">{{artist.show_title}}</a>
+                    <span class="black-color schedule-place">{{artist.location}}</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="schedule-section transparent flex flex-space-between">
+              <div
+                  class="schedule-section-width-20  border-dotted border-color-black flex flex-center flex-align-items-center"><span
+                  class="date-number red-color">10 pn</span>
+              </div>
+              <div class="schedule-section-width-80  flex flex-column flex-align-self-center ">
+                <div class="flex flex-align-items-center flex-start spacer-20"
+                     ng-repeat="artist in artists | filter:{date:'10 pn'}">
+                  <span class="orange-color time-schedule black-bg">{{artist.time}}</span>
+
+                  <div class="flex flex-column flex-align-items-center">
+                    <a href="/artists/{{artist.id}}" class="black-color schedule-person-name">{{artist.name}}</a>
+                    <a href="/shows/{{artist.id}}" class="black-color schedule-show-title">{{artist.show_title}}</a>
+                    <span class="black-color schedule-place">{{artist.location}}</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- end of schedule container -->
+          </slick>
+
+        </div>
+      </div>
+      <div class="section-width-50 first-section-items">
+        <a href="shows" class="items-height-70 display-block overflow-hidden"><span
+            class="display-block mask items-height-70-bg"></span><span class="section-title wow fadeInLeft"
+                                                                       data-wow-duration="1s"
+                                                                       data-wow-delay="1.5">Spektakle</span></a>
+        <a href="tickets" class="items-height-30 display-block overflow-hidden"><span
+            class="display-block mask items-height-30-bg"></span><span class="section-title wow fadeInLeft"
+                                                                       data-wow-duration="1s"
+                                                                       data-wow-delay="0.5">Rezerwacje</span> </a>
+      </div>
+    </div>
+  </section>
+  <section class="map-section">
+    <div my-map></div>
+    <ul class="list-markers visible-w-1024 ">
+      <li><span>A</span> Scena na Świebodzkim</li>
+      <li><span>B</span> Centrum Historii Zajezdnia</li>
+      <li><span>C</span> Parking podziemny pod NFM</li>
+      <li><span>D</span> Park Południowy</li>
+      <li><span>E</span> Sky Tower, ul. Powstańców Śląskich 95</li>
+      <li><span>F</span> Teatr Polski-Scena Kameralna: podwórze</li>
+      <li><span>G</span> Przejście podziemne na pl. Jana Pawła II</li>
+      <li><span>H</span> Stara Piekarnia, ul. Księcia Witolda 62–70</li>
+      <li><span>I</span> Uniwersytet Wrocławski</li>
+      <li>Aula im. Witolda Świdy</li>
+      <li> Wydział Prawa, Administracji i Ekonomii bud. "D"</li>
+    </ul>
+  </section>
+  <ul class="list-markers visible-device full-width-section">
+    <li><span>A</span> Scena na Świebodzkim</li>
+    <li><span>B</span> Centrum Historii Zajezdnia</li>
+    <li><span>C</span> Parking podziemny pod NFM</li>
+    <li><span>D</span> Park Południowy</li>
+    <li><span>E</span> Sky Tower, ul. Powstańców Śląskich 95</li>
+    <li><span>F</span> Teatr Polski-Scena Kameralna: podwórze</li>
+    <li><span>G</span> Przejście podziemne na pl. Jana Pawła II</li>
+    <li><span>H</span> Stara Piekarnia, ul. Księcia Witolda 62–70</li>
+    <li><span>I</span> Uniwersytet Wrocławski</li>
+    <li>Aula im. Witolda Świdy</li>
+    <li> Wydział Prawa, Administracji i Ekonomii bud. "D"</li>
+  </ul>
+  <section>
+    <div class="third-section flex flex-space-between flex-align-items-center grey-bg">
+      <div class="section-width-50 title-black wow fadeInUp" data-wow-duration="1s"
+           data-wow-delay="1">Wydarzeniom towarzyszyć będzie wznowienie publikacji "Kartoteka, skoroszyt" Tadeusza
+        Różewicza.
+      </div>
+      <div class="section-width-50 third-section-item display-block overflow-hidden visible-w-1024"><span
+          class="display-block mask third-section-bg"></span></div>
+    </div>
+  </section>
+</div>
+<!-- footer -->
+<div class="full-width-section parallax footer footer-bg flex flex-wrap-wrap flex-space-around"
+     sticky-footer=".wrapper">
+  <img src="img/esk-1.png">
+  <img src="img/esk-2.png">
+  <span class="footer-text">sfinansowane ze środków</span>
+  <img src="img/ministerstwo.png">
+  <span class="footer-text">współorganizatorzy</span>
+  <img src="img/nfm.png">
+  <img src="img/impart.png">
+  <img src="img/grot.png">
+  <span class="footer-text">partner strategiczny</span>
+  <img src="img/kghm.png">
+  <span class="footer-text">partnerzy</span>
+  <img src="img/skytower.png">
+  <img src="img/tm.png">
+  <img src="img/zajezdnia.png">
+  <img src="img/osrodek-p-i-p.png">
+  <img src="img/jednego-aktora.png">
+  <span class="footer-text">patroni medialni</span>
+  <img src="img/radio-wroclaw.png">
+  <img src="img/gazeta-wyborcza.png">
+  <img src="img/wroclaw-pl.png">
+  <img src="img/teatralny.png">
+  <img src="img/co-jest-grane.png">
+  <img src="img/kultura-dost.png">
+  <img src="img/dla-studenta.png">
+  <img src="img/infro-art-24.png">
+</div>

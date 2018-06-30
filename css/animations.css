@@ -1,0 +1,158 @@
+/* cross fading between routes with ngView */
+
+.view-container {
+  position: relative;
+    perspective:600px;
+}
+
+.view-frame.ng-enter,
+.view-frame.ng-leave {
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.view-frame.ng-enter {
+  -webkit-animation: 1.5s  fadeInDown;
+  -moz-animation: 1.5s  fadeInDown;
+  -o-animation: 1.5s  fadeInDown;
+  animation: 1.5s  fadeInDown;
+  z-index: 100;
+}
+
+.view-frame.ng-leave {
+  -webkit-animation: .1s  fadeOut;
+  -moz-animation: .1s  fadeOut;
+  -o-animation: .1s fadeOut;
+  animation: .1s  fadeOut;
+    z-index: 99;
+}
+
+/* my animation for moving artists name and  titles  */
+
+.fadeInDownMy {
+    -webkit-animation-name: fadeInDownMy;
+    animation-name: fadeInDownMy;
+}
+@-webkit-keyframes fadeInDownMy {
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDownMy {
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes myFadeInLeft {
+    0%{
+        opacity: 0;
+    }
+    50% {
+
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes myFadeInLeft {
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateX(-20px);
+        -ms-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.myFadeInLeft {
+    -webkit-animation-name: myFadeInLeft ;
+    animation-name: myFadeInLeft;
+}
+
+@-webkit-keyframes myFadeInUp {
+    0%{
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes myFadeInUp {
+    0%{
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.myFadeInUp {
+    -webkit-animation-name: myFadeInUp;
+    animation-name: myFadeInUp;
+}

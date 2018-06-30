@@ -1,0 +1,183 @@
+
+/*    ---------------------------------             visible in device mode and hidden in landscape    */
+
+.visible-w-1024{
+    visibility: hidden;
+    display: none;
+}
+.visible-device{
+    display: block;
+    visibility: visible;
+}
+
+/*  ------------------------------            spacer between */
+
+.spacer-20{
+    padding: 7px 10px;
+}
+
+
+/*  ------------------------------                      header    */
+
+.logo{
+    height: 30px;
+    margin-right: 20px;
+}
+
+/*   ----------------------------             first banner options main view    */
+
+.first-banner h1{
+    font-size: 2.5em;
+    /*padding: 0 0 0 50px;*/
+}
+.first-banner p{
+    font-size: 1.6em;
+}
+.title-black, .title-white{
+    font-size: 1.6em;
+}
+.section-title{
+    font-size: 2.6em;
+}
+
+/*    ---------------------------------               section with specific WIDTH and HEIGHT   */
+
+.section-width-50{
+    width: 100%;
+}
+.items-height-30, .items-height-40,.items-height-70{
+    height: 300px;
+}
+.items-height-60{
+    height: 550px;
+}
+
+
+/*  --------------------------------                 first  section main view   */
+
+.first-section-items{
+    height: auto;
+}
+
+/*    --------------------------------              third section in main view   */
+
+.third-section{
+    height: 300px;
+}
+
+/*--------------------------------------               map section and markers   */
+
+#gmaps, .map-section{
+    height: 300px;
+}
+.list-markers{
+    position: relative;
+    top:0;
+    right: 0;
+    background: rgb(8,48,74);
+    padding: 0;
+    margin: 0;
+}
+
+/*  -----------------------------------             schedule  section    */
+
+
+.schedule-section{
+    height: auto;
+    padding: 40px 0;
+}
+
+/*   --------------------------------               schedule responsibility        */
+
+.schedule-section-width-20{
+    width: 20%;
+}
+.schedule-section-width-80{
+    width: 80%;
+}
+
+/*    ---------------------------                person and title in schedule   */
+
+.schedule-person-name{
+    font-size: 1.5em;
+}
+
+.schedule-show-title{
+    font-size: 1.4em;
+}
+
+/*   ----------------------                place in schedule   */
+
+.schedule-place{
+    font-size: 1.1em;
+}
+
+/*   -----------------------                 date in schedule  */
+
+.date-number{
+    font-size: 3em;
+}
+
+/*   -----------------------------          time in schedule  */
+
+.time-schedule{
+    font-size: 1em;
+}
+.time{
+    font-size: 1em;
+    padding: 10px 8px;
+    word-break: break-all;
+    width: 4em;
+    margin-top: 20px;
+}
+
+/*----------------------------              slick carousel background in schedule    */
+
+.carousel-bg{
+    height: 750px !important;
+}
+
+/*  ------------------------------------       artist  section   */
+
+.artist-name{
+    font-size: 2em;
+}
+.artists-detail-tmpl-name{
+    height: 300px;
+}
+.artist-section-height{
+    width: 100% !important;
+}
+
+
+/* -------------------------------------------             sroll down button   */
+
+.fa-angle-down:before {
+    content: "\f107";
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 4px 12px;
+    color: #ffffff;
+    font-size: 2.5em;
+}
+.btn-scroll{
+    margin: 40px 0 0 0;
+    display: block;
+    width: 70px;
+}
+
+
+
+
+/*     --------------------------------                parallax options   */
+
+.parallax{
+    background-attachment: scroll !important;
+}
+
+/*   ------------------------------------           my title animation */
+
+.animation{
+    animation:none;
+    -webkit-animation:none;
+}
